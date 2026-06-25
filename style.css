@@ -16,13 +16,24 @@ body {
   transition: all 150ms ease !important;
   min-width: 355px;
 }
+.gradient-text {
+  background: radial-gradient(
+    ellipse at top left,
+    #14b8a6,   /* teal-500 */
+    #a855f7,   /* purple-500 */
+    #ef4444    /* red-500 */
+  );
 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /************************** ABOUT PAGE*********************** */
 
 .about_us #about-section {
   width: 100%;
-  background-image: url('assets/css/img/about_us/about_bg.webp');
+  background-image: url('assets/css/img/about_us/about_bg1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -45,7 +56,7 @@ nav .logo {
 }
 
 #ourProcess {
-  background-image: url(assets/css/img/delivery_bg_img.png);
+  /* background-image: url(assets/css/img/delivery_bg_img.png); */
   background-repeat: no-repeat;
   background-position: 50% 65%;
 }
@@ -1015,7 +1026,7 @@ footer .nav-links a:hover {
 
 /* contact us */
 .contact_us .contact-section {
-  background-image: url('assets/css/img/about_us/about_bg.webp');
+  background-image: url('assets/css/img/about_us/about_bg1.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
