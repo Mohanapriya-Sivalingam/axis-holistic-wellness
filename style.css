@@ -29,6 +29,14 @@ body {
   color: transparent;
 }
 
+.modal-dialog{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:calc(100vh - 1rem);
+}
+
+
 /************************** ABOUT PAGE*********************** */
 
 .about_us #about-section {

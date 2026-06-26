@@ -52,16 +52,14 @@
               process</a> -->
           <!-- <a class="nav-link px-0 py-2 mx-lg-3 fs-6"
               href="#benefits">Benefit</a> -->
-              <a class="nav-link px-0 py-2 mx-lg-3 fs-6"
-              href="services.html">Services</a>
-            <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="aboutUs.html">About
-              Us</a>
-            <a class="nav-link px-0 py-2 mx-lg-3 fs-6"
-              href="contactUs.html">Contact Us</a>
-          </div>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="services.html">Services</a>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="aboutUs.html">About
+            Us</a>
+          <a class="nav-link px-0 py-2 mx-lg-3 fs-6" href="contactUs.html">Contact Us</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
   <!-------- section-1 Hero Banner -------->
   <section class="banner py-24">
@@ -88,12 +86,14 @@
           </p>
           <!-------- Call To Action Button -------->
           <div class="my-1 mx-0 d-inline-flex mt-3">
-            <a href="#offer_section"
-              class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center banner_btn px-4 py-3">
-              <span class="fw-semibold m-0 ">Book Appointment</span>
+            <button type="button"
+              class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center banner_btn px-4 py-3"
+              data-bs-toggle="modal" data-bs-target="#bookModal">
+
+              <span class="fw-semibold m-0">Book Appointment</span>
               <i class="fa-solid fa-chevron-right ps-3"></i>
 
-            </a>
+            </button>
           </div>
         </div>
         <div class="col-12 col-md-9 mx-auto col-lg-6 ms-lg-auto d-flex align-items-end">
@@ -111,8 +111,8 @@
     <section id="ourProcess" class="pt-5">
       <!-------- Section Heading -------->
       <div class="text-center py-3">
-        <h5 class="fw-semibold" style="color: #2A186B;">Meet Dr. Nasrin PT</h5>
-        <h1 class="fw-bold">Align. Heal. Thrive</h1>
+        <h5 class="fw-semibold" style="color: #2A186B;">Meet Dr. Nasreen PT</h5>
+        <h1 class="fw-bold">Express. Heal. Thrive</h1>
       </div>
 
       <!-------- 4 Process in 2X2 grid -->
@@ -264,7 +264,7 @@
               <!-- Call To Action Button -->
 
               <div class="my-1 mx-0 d-inline-flex mt-3">
-                <a href="#"
+                <a href="services.html"
                   class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center schedule_btn px-4 py-3">
                   <span class="fw-semibold m-0 ">Explore All Services</span>
                   <i class="fa-solid fa-chevron-right ps-3"></i>
@@ -435,11 +435,14 @@
               <!-- Call to Action Button -->
               <div class="mt-3 ">
                 <div class="my-1 mx-0 d-inline-flex mt-3">
-                  <a href="https://wa.me/8220362015"
-                    class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center book_now_btn px-4 py-3">
+                  <button type="button"
+                    class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center book_now_btn px-4 py-3"
+                    data-bs-toggle="modal" data-bs-target="#bookModal">
+
                     <span class="fw-semibold m-0">Book Now</span>
                     <i class="fa-solid fa-chevron-right ps-3"></i>
-                  </a>
+
+                  </button>
                 </div>
               </div>
 
@@ -558,11 +561,14 @@
                 <!-- Call to Action Button -->
                 <div class="mt-3 ">
                   <div class="my-1 mx-0 d-inline-flex mt-3">
-                    <a href="https://wa.me/8220362015"
-                      class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center book_now_btn px-4 py-3">
-                      <span class="fw-semibold m-0">Book Now</span>
-                      <i class="fa-solid fa-chevron-right ps-3"></i>
-                    </a>
+                    <button type="button"
+                    class="btn btn-lg rounded-5 d-flex justify-content-around align-items-center book_now_btn px-4 py-3"
+                    data-bs-toggle="modal" data-bs-target="#bookModal">
+
+                    <span class="fw-semibold m-0">Book Now</span>
+                    <i class="fa-solid fa-chevron-right ps-3"></i>
+
+                  </button>
                   </div>
                 </div>
 
@@ -756,7 +762,7 @@
             <!-- Right Section -->
             <div class="col-8 mx-auto col-lg-4 col-xl-4 mx-auto m-lg-auto pt-5">
               <div class="img-fluid d-flex justify-content-center align-items-start">
-                <img alt="..." src="fq.jpeg" loading="lazy" class="img-fluid m-0 mx-auto" />
+                <img alt="..." src="logo3.webp" loading="lazy" class="img-fluid m-0 mx-auto" />
               </div>
             </div>
           </div>
@@ -772,9 +778,243 @@
   <!-- Back to top button -->
   <!-- wp button -->
   <div>
-    <a href="https://wa.me/8220362015" class="btn-whatsapp-pulse">
+    <a href="https://wa.me/+919618346155" class="btn-whatsapp-pulse">
       <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
     </a>
+
+  </div>
+  <!-- BOOK CONSULTATION MODAL -->
+
+  <div class="modal fade" id="bookModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+      <div class="modal-content rounded-4 border-0 shadow">
+
+        <div class="modal-header text-white" style="background:#990199;">
+
+          <h4 class="modal-title">
+            Book Consultation
+          </h4>
+
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+          </button>
+
+        </div>
+
+        <!-- <div class="modal-body p-4 text-center">
+
+          <form style="max-width:600px; margin:0 auto; text-align:center;">
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Full Name
+              </label>
+
+              <input type="text" class="form-control" placeholder="Enter your name">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Mobile Number
+              </label>
+
+              <input type="tel" class="form-control" placeholder="Enter mobile number">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Email
+              </label>
+
+              <input type="email" class="form-control" placeholder="Optional">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Consultation Type
+              </label>
+
+              <select class="form-select">
+
+                <option style="background:#990199;">Online</option>
+
+                <option style="background:#990199;">Offline</option>
+
+              </select>
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Service
+              </label>
+
+              <select class="form-select" id="serviceSelect">
+
+                <option value="physio" style="background:#990199;">
+                  Physiotherapy Consultation
+                </option>
+
+                <option value="mental" style="background:#990199;">
+                  Mental & Emotional Health
+                </option>
+
+              </select>
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Preferred Date
+              </label>
+
+              <input type="date" class="form-control"  id="datePicker">
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label class="form-label">
+                Preferred Time
+              </label>
+
+              <select class="form-select" id="timeSlot">
+
+                <option >9:00 AM - 12:00 PM</option>
+
+                <option>5:00 PM - 8:30 PM</option>
+
+              </select>
+
+            </div>
+
+            <div class="col-12 mb-3">
+
+              <label class="form-label">
+                Additional Notes
+              </label>
+
+              <textarea class="form-control" rows="3" placeholder="Describe your concern..."></textarea>
+
+            </div>
+
+            <div class="text-center">
+
+              <button class="btn px-5 py-3 text-white" style="background:#990199;">
+
+                Schedule Appointment
+
+              </button>
+
+            </div>
+
+          </div>
+
+          </form>
+
+        </div> -->
+        <div class="modal-body p-4">
+          <form class="mx-auto" style="max-width:700px;">
+            <div class="row justify-content-center">
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" placeholder="Enter mobile number">
+              </div>
+              <!-- Email -->
+              <div class="col-md-6">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter your email (Optional)">
+              </div>
+
+              <!-- Consultation Type -->
+              <div class="col-md-6">
+                <label class="form-label">Consultation Type <span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option selected disabled>Select Consultation Type</option>
+                  <option>Online</option>
+                  <option>Offline</option>
+                </select>
+              </div>
+
+              <!-- Service -->
+              <div class="col-md-6">
+                <label class="form-label">Service <span class="text-danger">*</span></label>
+                <select class="form-select" id="serviceSelect" required>
+                  <option selected disabled>Select Service</option>
+                  <option value="physio">Physiotherapy Consultation</option>
+                  <option value="mental">Mental & Emotional Health</option>
+                </select>
+              </div>
+
+              <!-- Preferred Date -->
+              <div class="col-md-6">
+                <label class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" id="datePicker" required>
+              </div>
+
+              <!-- Preferred Time -->
+              <div class="col-12">
+                <label class="form-label">Preferred Time <span class="text-danger">*</span></label>
+
+                <select class="form-select" id="timeSlot" required>
+
+                  <optgroup label="Physiotherapy Consultation">
+                    <option disabled>Monday - Saturday</option>
+                    <option>9:00 AM - 12:00 PM</option>
+                    <option>5:00 PM - 8:30 PM</option>
+
+                    <option disabled>Sunday</option>
+                    <option>10:00 AM - 12:00 PM</option>
+                  </optgroup>
+
+                  <optgroup label="Mental & Emotional Health">
+                    <option>6:00 AM - 7:00 AM</option>
+                    <option>7:00 AM - 8:00 AM</option>
+                    <option>9:00 AM - 10:00 AM</option>
+                  </optgroup>
+
+                </select>
+              </div>
+
+              <!-- Additional Notes -->
+              <div class="col-12">
+                <label class="form-label">Additional Notes</label>
+                <textarea class="form-control" rows="4" placeholder="Describe your concern..."></textarea>
+              </div>
+
+
+              <!-- Remaining fields -->
+
+              <div class="col-12 text-center mt-3">
+                <button class="btn text-white px-5 py-3" style="background:#990199;">
+                  Schedule Appointment
+                </button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
   <!-- wp button -->
@@ -787,14 +1027,14 @@
 
           <h5 class="fw-bold">AXIS HOLISTIC WELLNESS</h5>
 
-            <div class="ms-lg-auto row justify-content-center align-items-center mt-4 py-3">
-              <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="index.html">Home</a>
-              <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="services.html">Services</a>
-              <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="aboutUs.html">About</a>
-              <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="contactUs.html">Contact</a>
-            </div>
-            <p class="col-9 mx-auto fs-6">"From the very first consultation, I felt supported and understood. The holistic approach to both physical and mental well-being exceeded my expectations."</p>
+          <div class="ms-lg-auto row justify-content-center align-items-center mt-4 py-3">
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="index.html">Home</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="services.html">Services</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="aboutUs.html">About</a>
+            <a class="col-12 col-md-1 text-decoration-none text-light py-3 px-0 fs-6" href="contactUs.html">Contact</a>
           </div>
+          <p class="col-9 mx-auto fs-6">"Some individuals may need a safe and supportive space to talk to someone who can listen with empathy and help them navigate stress, overwhelming emotions, negative thoughts, fear, rejection, job interview setbacks, relationship challenges, grief, guilt, shame, and unresolved feelings. Our goal is to provide compassionate guidance that promotes emotional well-being, resilience, and personal growth."</p>
+        </div>
 
         <div class="navbar-nav ms-lg-auto pt-3 mt-3">
           <hr>
@@ -818,13 +1058,63 @@
       </div>
     </div>
 
+
   </footer>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
 
   <script defer src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
   <script defer src="assets/js/script.js"></script>
+  <script>
+
+    const service = document.getElementById("serviceSelect");
+    const slot = document.getElementById("timeSlot");
+    const datePicker = document.getElementById("datePicker");
+
+    // Disable previous dates
+    datePicker.min = new Date().toISOString().split("T")[0];
+
+    // Change time slots
+    service.addEventListener("change", function () {
+
+      if (this.value === "physio") {
+
+        slot.innerHTML = `
+      <option>9:00 AM - 12:00 PM</option>
+      <option>5:00 PM - 8:30 PM</option>
+      <option>Sunday : 10:00 AM - 12:00 PM</option>
+    `;
+
+      } else {
+
+        slot.innerHTML = `
+      <option>6:00 AM - 7:00 AM</option>
+      <option>7:00 AM - 8:00 AM</option>
+      <option>9:00 AM - 10:00 AM</option>
+    `;
+
+      }
+
+    });
+
+    // Violet focus effect
+    document.querySelectorAll(".form-control, .form-select").forEach(el => {
+
+      el.addEventListener("focus", function () {
+        this.style.borderColor = "#990199";
+        this.style.boxShadow = "0 0 0 .2rem rgba(153,1,153,.25)";
+      });
+
+      el.addEventListener("blur", function () {
+        this.style.borderColor = "#ced4da";
+        this.style.boxShadow = "none";
+      });
+
+    });
+
+  </script>
 </body>
 
 </html>
