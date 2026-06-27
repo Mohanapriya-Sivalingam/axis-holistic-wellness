@@ -11,10 +11,10 @@
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.webp">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.webp">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo.webp">
-    <link rel="manifest" href="logo.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="logocut.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="logocut.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="logocut.webp">
+    <link rel="manifest" href="logocut.webp">
     <!-- CSS -->
     <link rel="stylesheet"
       href="assets/css/fontawesome-free-6.6.0-web/css/all.min.css">
@@ -30,7 +30,7 @@
       <nav class="container-xl py-1">
         <!-- Logo -->
         <a class="navbar-brand fs-5 fw-semibold d-flex " href="index.html">
-          <img src="logo2.webp" alt class="img-fluid col-1 logo">
+          <img src="logocut.webp" alt class="img-fluid col-1 logo">
           <p class="ps-1 align-self-center my-2 mx-1 brand_name gradient-text">AXIS HOLISTIX WELLNESS</p>
         </a>
         <!-- Navbar toggle -->
@@ -80,14 +80,14 @@
         <div class="row">
 
           <div class="col-lg-6 col-10 mx-auto  d-flex">
-            <img src="assets/css/img/contact_img1.webp" alt="NBK-Quick-Wash"
+            <img src="assets/css/img/profilepic.webp" alt="NBK-Quick-Wash"
               class="img-fluid ms-lg-3 col-lg-10 col-12 align-self-center">
           </div>
 
           <div class="col-lg-6 col-12 px-lg-5 px-2 pt-lg-5 pt-2 mx-auto">
 
-            <form action class=" contact_form">
-              <!-- 1st row -->
+            <!-- <form action class=" contact_form">
+            
               <div
                 class="d-flex flex-wrap py-lg-2 py-1 pt-lg-4 pt-1 py-lg-1 py-xl-2">
                 <div
@@ -105,7 +105,7 @@
                     minlength="3" required>
                 </div>
               </div>
-              <!-- 2nd Row -->
+          
               <div
                 class="d-flex flex-wrap py-lg-2 py-1 pb-lg-4 pb-1 py-lg-1 py-xl-2">
                 <div
@@ -140,7 +140,84 @@
                 <button type="submit" class="rounded-5 py-3 px-5">Send
                   Message</button>
               </div>
-            </form>
+            </form> -->
+            <form id="contactForm" class="contact_form">
+
+  <!-- 1st Row -->
+  <div class="d-flex flex-wrap py-lg-2 py-1 pt-lg-4 pt-1 py-lg-1 py-xl-2">
+    <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-2 py-xl-2">
+      <label for="firstName" class="fw-medium">First Name</label>
+      <input
+        class="form-control border-0 border-bottom fs-6"
+        id="firstName"
+        type="text"
+        placeholder="John"
+        minlength="3"
+        required>
+    </div>
+
+    <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-2 py-xl-2">
+      <label for="lastName" class="fw-medium">Last Name</label>
+      <input
+        class="form-control border-0 border-bottom fs-6"
+        id="lastName"
+        type="text"
+        placeholder="Doe"
+        minlength="3"
+        required>
+    </div>
+  </div>
+
+  <!-- 2nd Row -->
+  <div class="d-flex flex-wrap py-lg-2 py-1 pb-lg-4 pb-1 py-lg-1 py-xl-2">
+    <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-3 py-xl-2">
+      <label for="email" class="fw-medium">Email</label>
+      <input
+        id="email"
+        class="form-control border-0 border-bottom fs-6"
+        type="email"
+        placeholder="demo@gmail.com"
+        required>
+    </div>
+
+    <div class="d-flex flex-column flex-fill p-1 py-lg-4 py-3 py-xl-2">
+      <label for="PhoneNumber" class="fw-medium">Phone Number</label>
+      <input
+        class="form-control border-0 border-bottom fs-6"
+        id="PhoneNumber"
+        type="tel"
+        placeholder="+919123456780"
+        required>
+      <div id="error"></div>
+    </div>
+  </div>
+
+  <!-- Message -->
+  <div class="d-flex flex-column py-lg-2 py-1">
+    <label for="validationTextarea" class="form-label fs-6 fw-medium">
+      Message
+    </label>
+
+    <textarea
+      class="form-control-lg fs-6"
+      id="validationTextarea"
+      placeholder="Write your message.."
+      rows="5"
+      cols="10"
+      required></textarea>
+  </div>
+
+  <!-- Button -->
+  <div class="d-flex justify-content-lg-end align-items-end pt-lg-5 pt-4 pb-0 send_btn">
+    <button
+      id="sendMessageBtn"
+      type="submit"
+      class="rounded-5 py-3 px-5">
+      Send Message
+    </button>
+  </div>
+
+</form>
           </div>
 
         </div>
@@ -199,7 +276,7 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </a>
                   <a class="text-light py-2 px-3 fs-5" href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
+                     <i class="fa-brands fa-youtube"></i>
                   </a>
                   <a class="text-light py-2 px-3 fs-5" href="#">
                     <i class="fa-brands fa-linkedin"></i>
@@ -217,11 +294,11 @@
               class="text-decoration-none col-lg-5 col-12 mx-auto map my-3 my-lg-0">
               <div id="google-maps-display"
                 style="height:100%; width:100%;max-width:100%;">
-                <iframe
+                <!-- <iframe
                   style="height:100%;width:100%;border:0; border-radius: 12px;"
                   frameborder="0"
-                  src="https://www.google.com/maps/embed/v1/place?q=nbk+quick+wash&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-
+                  src="https://www.google.com/maps/embed/v1/place?q=nbk+quick+wash&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe> -->
+ <img alt="..." src="logofull.webp" loading="lazy" class="img-fluid m-0 mx-auto" />
               </div>
             </div>
 
@@ -279,7 +356,7 @@
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
               <a class="nav-link py-2 px-4 fs-5" href="#">
-                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
               </a>
               <a class="nav-link py-2 px-4 fs-5" href="#">
                 <i class="fa-brands fa-linkedin"></i>
@@ -301,6 +378,45 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script defer src="assets/js/script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("PhoneNumber").value.trim();
+        const message = document.getElementById("validationTextarea").value.trim();
+
+        // Your WhatsApp Number
+        const whatsappNumber = "919618346155";
+
+        const whatsappMessage =
+`*New Contact Form Submission*
+
+First Name: ${firstName}
+Last Name: ${lastName}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}`;
+
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(whatsappURL, "_blank");
+
+        // Clear form after opening WhatsApp
+        contactForm.reset();
+    });
+
+});
+</script>
   </body>
 
 </html>

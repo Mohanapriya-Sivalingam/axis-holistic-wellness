@@ -19,9 +19,9 @@ body {
 .gradient-text {
   background: radial-gradient(
     ellipse at top left,
-    #14b8a6,   /* teal-500 */
-    #a855f7,   /* purple-500 */
-    #ef4444    /* red-500 */
+    #0ca291,   /* teal-500 */
+    #760cd8,   /* purple-500 */
+    #ae02a5    /* red-500 */
   );
 
   -webkit-background-clip: text;
@@ -41,7 +41,7 @@ body {
 
 .about_us #about-section {
   width: 100%;
-  background-image: url('assets/css/img/about_us/about_bg1.webp');
+  background-image: url('assets/css/img/about_us/aboutbg.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,14 +49,15 @@ body {
 
 .about_us .about-section .about-title {
   color: #FFFFFF;
+  /* color:#19191A; */
   font-family: var(--jakarta-font);
   font-weight: 700;
   font-size: 48px;
 }
 
 nav .logo {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .nav .nav_line {
@@ -814,6 +815,9 @@ footer .nav-links a:hover {
   width: 100%;
 }
 
+.about_us .categories-images .categories-categories-section .categories-section-img{
+  height: 600px;
+}
 
 .about_us .categories-section .categories-content .categories-para {
   font-size: 14px;
@@ -869,7 +873,7 @@ footer .nav-links a:hover {
 }
 
 /* Machine Section */
-.about_us .machine-container {
+/* .about_us .machine-container {
   width: 100%;
   min-height: 661px;
   background: #220034;
@@ -878,6 +882,161 @@ footer .nav-links a:hover {
 .about_us .machine-main {
   display: flex;
   flex-direction: row;
+} */
+
+/* Machine Section */
+.about_us .machine-container {
+  width: 100%;
+  min-height: 661px;
+  background: #220034;
+  font-family: var(--jakarta-font);
+}
+
+.about_us .machine-container .machine-wrapper h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.about_us .machine-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about_us .machine-main .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about_us .machine-main .main-content .online-order {
+  width: 350px;
+  min-height: 130px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about_us .machine-main .main-content .online-order:hover {
+  transform: scale(1.04);
+}
+
+.about_us .machine-image {
+  height: 397px;
+  width: 397px;
+}
+
+.about_us .machine-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text */
+.about_us .machine-all-para {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Number Circle */
+.about_us .machine-all-num {
+  width: 60px;
+  height: 60px;
+  background: #AD49E1;
+  border-radius: 50%;
+  box-shadow: 0px 14px 34px rgba(26, 0, 119, 0.33);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Left cards (1 & 2) */
+.about_us .machine-number {
+  right: -30px;
+}
+
+/* Right cards (3 & 4) */
+.about_us .machine-number-round {
+  left: -30px;
+}
+
+.about_us .machine-all-num p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+.categories-section-img{
+  height: 200px;
+}
+/* Tablet */
+@media screen and (max-width: 1061px) {
+  .about_us .machine-main {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+  .about_us .machine-main .main-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about_us .machine-main .main-content .online-order {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about_us .machine-number,
+  .about_us .machine-number-round {
+    position: absolute;
+    right: -20px;
+    left: auto;
+  }
+}
+
+@media (max-width: 481px) {
+  .about_us .machine-image {
+    height: 297px;
+    width: 297px;
+  }
+
+  .about_us .machine-container .machine-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .about_us .machine-main .main-content .online-order {
+    min-height: 110px;
+    padding: 15px;
+  }
+
+  .about_us .machine-all-para {
+    font-size: 16px;
+  }
+
+  .about_us .machine-all-num {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about_us .machine-all-num p {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width:1061px) {
   .about_us .machine-main {
@@ -1034,7 +1193,7 @@ footer .nav-links a:hover {
 
 /* contact us */
 .contact_us .contact-section {
-  background-image: url('assets/css/img/about_us/about_bg1.webp');
+  background-image: url('assets/css/img/about_us/aboutbg.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
